@@ -19,7 +19,7 @@ function speedrun.setup(conf)
                 do
                     vim.keymap.set('n', key .. i, ':terminal ' .. item .. '\n', {
                         silent = true,
-                        desc = 'Run ' .. icon .. ' (' .. i .. ')'
+                        desc = 'Run ' .. icon .. ' (' .. item .. ')'
                     })
                 end
             end
