@@ -1,6 +1,6 @@
 local speedrun = {}
 
-function speedrun.setup(conf)
+local function speedrun.setup(conf)
     vim.api.nvim_create_autocmd('BufEnter', {
         callback = function(opts)
             if conf.langs[vim.bo[opts.buf].filetype]
