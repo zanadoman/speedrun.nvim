@@ -8,6 +8,7 @@ function speedrun.setup(conf)
             if conf.langs and conf.langs[lang]
             then
                 local key = conf.keymap
+                local mods = conf.langs[lang].modifiers
                 local icon = conf.langs[lang].icon
 
                 vim.keymap.set('n', key, ':terminal ' .. conf.langs[lang].cmd[1] .. '\n', {
@@ -17,7 +18,7 @@ function speedrun.setup(conf)
 
                 for i, item in ipairs(conf.langs[lang].cmd)
                 do
-                    local mod = conf.modifiers[i] or i - #conf.modifiers
+                    local mod = mods[i] or i - #mods
 
                     vim.keymap.set('n', key .. mod, ':terminal ' .. item .. '\n', {
                         silent = true,
