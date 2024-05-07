@@ -18,7 +18,7 @@ function speedrun.setup(conf)
 
                 for i, item in ipairs(conf.langs[lang].cmd)
                 do
-                    local mod = mods[i] or i - #mods
+                    local mod = mod and (mods[i] or i - #mods) or i
 
                     vim.keymap.set('n', key .. mod, ':terminal ' .. item .. '\n', {
                         silent = true,
