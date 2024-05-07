@@ -13,7 +13,7 @@ function speedrun.setup(conf)
                     local cmd = item or ''
                     local icon = conf.langs[lang].icon .. ' (' .. i .. ')' or lang
 
-                    vim.keymap.set('n', conf.keymap, ':terminal' .. cmd .. '\n', {
+                    vim.keymap.set('n', conf.keymap, ':terminal' .. item .. '\n', {
                         silent = true,
                         desc = 'Run ' .. icon
                     })
