@@ -8,7 +8,7 @@ function speedrun.setup(conf)
             if conf.langs[lang]
             then
                 local key = conf.keymap or '<leader>r'
-                local mode = ' | :terminal' .. conf.mode .. ' ' or ':terminal '
+                local mode = conf.mode .. ' | :terminal ' or ':terminal '
                 local cmd = conf.langs[lang].cmd or ''
                 local icon = conf.langs[lang].icon or lang
 
