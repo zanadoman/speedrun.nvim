@@ -8,11 +8,10 @@ function speedrun.setup(conf)
             if conf.langs[lang]
             then
                 local key = conf.keymap or '<leader>r'
-                local mode = ':' .. conf.mode .. ' | :terminal ' or ':terminal '
                 local cmd = conf.langs[lang].cmd or ''
                 local icon = conf.langs[lang].icon or lang
 
-                vim.keymap.set('n', conf.keymap, mode .. cmd .. '\n', {
+                vim.keymap.set('n', conf.keymap, ':terminal' .. cmd .. '\n', {
                     silent = true,
                     desc = 'Run ' .. icon
                 })
