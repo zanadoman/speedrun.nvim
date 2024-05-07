@@ -3,16 +3,18 @@ local speedrun = {}
 function speedrun.setup(conf)
     vim.api.nvim_create_autocmd('BufEnter', {
         callback = function(opts)
-            if conf.langs[vim.bo[opts.buf].filetype]
+            local lang = vim.bo[opts.buf].filetype
+
+            if conf.langs[lang]
             then
-                vim.keymap.set('n', conf.keymap, ':terminal ' ..
-                conf.langs[vim.bo[opts.buf].filetype].cmd .. '\n', {
+                local key = conf.keymap or '<leader>r'
+                local mode = ' | :terminal' .. conf.mode .. ' ' or ':terminal '
+                local cmd = conf.langs[lang].cmd or ''
+                local icon = conf.langs[lang].icon or lang
+
+                vim.keymap.set('n', conf.keymap, mode .. cmd .. '\n', {
                     silent = true,
-                    desc = 'Run ' .. (
-                        conf.langs[vim.bo[opts.buf].filetype].icon
-                        and conf.langs[vim.bo[opts.buf].filetype].icon
-                        or vim.bo[opts.buf].filetype
-                    )
+                    desc = 'Run ' .. icon
                 })
             end
         end
