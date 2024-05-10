@@ -17,10 +17,9 @@ Speedrun uses the Neovim API, basically it does the same thing that you would
 do in an external terminal, but in your editor with a keybind.\
 Migration to speedrun.nvim is very easy and fast.\
 Automatic descriptions for which-key.nvim
-![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/code.png)
 ![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/whichkey1.png)
 ![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/whichkey2.png)
-![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/run.png)
+![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/speedrun.png)
 # Installation
 Install using your plugin manager:
 - Using lazy.nvim
