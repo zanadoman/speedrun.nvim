@@ -9,6 +9,10 @@ keybind.
 how to compile or run your code in every language.
 # The solutions
 Specify multiply commands for keybinds for specific languages.
+![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/code.png)
+![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/run.png)
+![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/whichkey1.png)
+![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/whichkey2.png)
 # Why speedrun.nvim?
 Speedrun is a lightweight Neovim plugin written purely in Lua. It gives you the
 ability to run any predefined command quickly inside your editor without 
