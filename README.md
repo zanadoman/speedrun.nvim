@@ -21,7 +21,7 @@ Automatic descriptions for which-key.nvim
 ![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/whichkey2.png)
 ![speedrun.nvim](https://github.com/zanadoman/speedrun.nvim/blob/main/assets/speedrun.png)
 # Installation
-Install using your plugin manager:
+Install using your favorite plugin manager:
 - Using lazy.nvim
 ```lua
 { 'zanadoman/speedrun.nvim' }
